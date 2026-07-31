@@ -78,6 +78,12 @@ const Navbar = () => {
       className="fixed top-0 inset-x-0 z-50 pointer-events-none"
       aria-label="Main navigation"
     >
+      <div className="pointer-events-auto bg-coral-dark text-navy-dark px-4 py-2 text-center text-sm font-semibold shadow-md" role="status">
+        Prodfolio is shutting down on September 1, 2026. Export your portfolio before then — questions?{" "}
+        <a href="mailto:hello@prodfolio.io" className="underline underline-offset-2 hover:text-navy transition-colors">
+          hello@prodfolio.io
+        </a>
+      </div>
       <div className="mx-4 md:mx-6 mt-3 md:mt-4 pointer-events-auto">
         <div
           className={`rounded-2xl transition-all duration-500 border ${
@@ -314,6 +320,8 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+    {/* In-flow spacer matching the fixed shutdown banner height so page content clears it */}
+    <div className="h-14 md:h-9" aria-hidden="true" />
     </>
   );
 };
