@@ -34,6 +34,8 @@ import alyxThumbnail from "@/assets/Alyx Thumbnail.png";
 import zachPhoto from "@/assets/zach photo.jpeg";
 import zachThumbnail from "@/assets/Zach thumbnail.png";
 import aaronS3E9Thumbnail from "@/assets/aaron-thumbnail-s3e9.png";
+import johnPhoto from "@/assets/john image.jpeg";
+import johnThumbnail from "@/assets/John thumbnail.png";
 import steveS3E10Thumbnail from "@/assets/Steve Thumnail Ep25.png";
 import aaronEp28Thumbnail from "@/assets/Aaron episode 28 thumbnail.png";
 import andresPhoto from "@/assets/Andres photo.jpeg";
@@ -1218,6 +1220,50 @@ export const episodes: Episode[] = [
       { title: "Lovable", url: "https://lovable.dev" }
     ],
     keywords: ["Aaron Kesler", "RozieAI", "Rozie Synopsis", "PM interviewing", "PM interview questions", "product manager interview", "hiring PMs in the age of AI", "AI product management", "vibe coding", "critical thinking", "product discovery", "non-technical mother test", "explain it simply", "case study portfolio", "product trio", "product engineering merge", "shipping to production", "Lovable", "Cursor", "Claude Code", "Base44", "standing out in interviews", "PM job search", "curiosity hiring", "FORGE framework", "co-founder product manager"]
+  },
+  {
+    id: "38",
+    slug: "the-title-did-what-skills-couldnt",
+    title: "The Title Did What Skills Couldn't",
+    episodeNumber: "Episode 29",
+    guest: {
+      name: "John Fontenot",
+      role: "Founder",
+      company: "Path2Product",
+      website: "https://path2product.io",
+      industry: "Product Management Education",
+      bio: "John Fontenot is the founder of Path2Product, a Prodfolio partner that helps aspiring PMs get hands-on product experience before they have the job title. Originally from Louisiana and now based in Utah, John discovered product management from the other side of the table — as a software partnerships manager at Intel, trying to convince PMs to change their roadmaps. After roughly a hundred applications and some blunt recruiter feedback, he took a deliberately indirect route in through a SaaS sales role, then UX research, then product. Eight years and a string of senior IC, group PM, and director titles later, he's spent six years building Path2Product on the side. He's currently on sabbatical, writing The Product Market Gap with product marketer Daria Love.",
+      photo: johnPhoto,
+      linkedin: "https://www.linkedin.com/in/johnrfontenot/"
+    },
+    description: "John Fontenot went from hundreds of ignored applications to recruiters in his inbox two weeks later — same skills, new title. That gap is why he built Path2Product, and why he says most of what aspiring PMs are told about breaking in is backwards.",
+    longDescription: "Santi and Meagan sit down with John Fontenot, founder of Path2Product and a Prodfolio partner, for an episode that starts with a story most aspiring PMs need to hear: John spent two years and hundreds of applications trying to get into product, got nowhere, finally backdoored his way in through sales and UX research — and then, two weeks after changing his title on LinkedIn, recruiters started reaching out unprompted. Same person, same skills, two weeks of experience. That gap became the entire thesis of the company he's spent six years building.\n\nFrom there the conversation gets pointed. John calls out the hypocrisy of a field where most people fell into the job, bumbled through it for a decade, and now demand ten years of experience from everyone else. He explains why certifications keep failing the people who buy them, names the one he thinks aspiring PMs should skip, and lays out what he found when he pressure-tested the assumption that product management is different everywhere — the small set of things that never change no matter the industry or the tooling.\n\nThe episode also widens into working life: why John thinks a PE-backed company will teach you more about being a PM than a hyper-growth VC startup, the hour a day he's quietly taken out of his day job for over a decade, why he tells people to block their own calendars before someone else does, and a hard-won lesson about who you can safely vent to at work. Plus the book he's co-writing on the product market gap, the LinkedIn-page workaround he endorses for people building their own projects, and the line he draws at lying on a resume.",
+    thumbnail: johnThumbnail,
+    youtubeId: "jumU4gFSxv8",
+    buzzsproutId: "19459432",
+    spotifyUrl: "https://open.spotify.com/episode/5QyjlwQgu8N6WUVjcwu7C0",
+    appleUrl: "https://podcasts.apple.com/us/podcast/the-title-did-what-skills-couldnt-with-john/id1784108281?i=1000779898872",
+    topic: "career",
+    topics: ["Breaking Into Product", "Experience Gap", "PM Certifications", "Career Growth", "Building on the Side", "Product Market Fit"],
+    duration: "68 min",
+    publishedAt: "2026-08-04",
+    takeaways: [
+      "The two-week title change that brought in more recruiters than two years and hundreds of applications ever did — and what John concluded about how hiring actually works.",
+      "The backdoor route John took into product after recruiters told him his plan was impossible, and why he still recommends the indirect path.",
+      "The certification John thinks aspiring PMs should actively avoid, and the reason he'll say it out loud even at the risk of a defamation suit.",
+      "What survived when John pressure-tested the claim that product management is different at every company — the core that never changes, no matter the industry or the tools.",
+      "Why John says a PE-backed company will make you a better PM than a hyper-growth VC startup, even though everyone chases the equity.",
+      "The hour a day John has taken out of his day job for over a decade, and why he considers it well within ethical bounds.",
+      "The LinkedIn workaround John endorses for people building their own projects — and the exact line where it turns into lying."
+    ],
+    resourcesMentioned: [
+      { title: "Path2Product", url: "https://path2product.io" },
+      { title: "Email John Fontenot", url: "mailto:john@path2product.io" },
+      { title: "Crossing the Chasm by Geoffrey Moore", url: "https://www.amazon.com/Crossing-Chasm-3rd-Disruptive-Mainstream/dp/0062292986" },
+      { title: "Inside the Tornado by Geoffrey Moore", url: "https://www.amazon.com/Inside-Tornado-Strategies-Silicon-Hypergrowth/dp/0060745819" },
+      { title: "Daria Love on LinkedIn (co-author, The Product Market Gap)", url: "https://www.linkedin.com/in/darialove/" }
+    ],
+    keywords: ["John Fontenot", "Path2Product", "Path to Product", "breaking into product management", "PM experience gap", "aspiring product manager", "product management certifications", "Product School worth it", "how to become a product manager without experience", "PM portfolio", "product management title", "LinkedIn title change", "career pivot to product", "UX research to product management", "PE backed vs VC backed", "product market gap", "Daria Love", "PM and PMM partnership", "Crossing the Chasm", "Geoffrey Moore", "continuous learning knowledge worker", "calendar blocking", "building a side project", "product first principles"]
   }
 ];
 
