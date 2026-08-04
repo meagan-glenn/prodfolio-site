@@ -1256,6 +1256,7 @@ export const episodes: Episode[] = [
     ],
     resourcesMentioned: [
       { title: "Path2Product", url: "https://path2product.io" },
+      { title: "Email John Fontenot", url: "mailto:john@path2product.io" },
       { title: "Crossing the Chasm by Geoffrey Moore", url: "https://www.amazon.com/Crossing-Chasm-3rd-Disruptive-Mainstream/dp/0062292986" },
       { title: "Inside the Tornado by Geoffrey Moore", url: "https://www.amazon.com/Inside-Tornado-Strategies-Silicon-Hypergrowth/dp/0060745819" },
       { title: "Daria Love on LinkedIn (co-author, The Product Market Gap)", url: "https://www.linkedin.com/in/darialove/" }
