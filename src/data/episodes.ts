@@ -1241,6 +1241,7 @@ export const episodes: Episode[] = [
     thumbnail: johnThumbnail,
     youtubeId: "jumU4gFSxv8",
     buzzsproutId: "19459432",
+    appleUrl: "https://podcasts.apple.com/us/podcast/the-title-did-what-skills-couldnt-with-john/id1784108281?i=1000779898872",
     topic: "career",
     topics: ["Breaking Into Product", "Experience Gap", "PM Certifications", "Career Growth", "Building on the Side", "Product Market Fit"],
     duration: "68 min",
