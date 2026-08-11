@@ -1264,6 +1264,43 @@ export const episodes: Episode[] = [
       { title: "Daria Love on LinkedIn (co-author, The Product Market Gap)", url: "https://www.linkedin.com/in/darialove/" }
     ],
     keywords: ["John Fontenot", "Path2Product", "Path to Product", "breaking into product management", "PM experience gap", "aspiring product manager", "product management certifications", "Product School worth it", "how to become a product manager without experience", "PM portfolio", "product management title", "LinkedIn title change", "career pivot to product", "UX research to product management", "PE backed vs VC backed", "product market gap", "Daria Love", "PM and PMM partnership", "Crossing the Chasm", "Geoffrey Moore", "continuous learning knowledge worker", "calendar blocking", "building a side project", "product first principles"]
+  },
+  {
+    id: "39",
+    slug: "how-a-side-hustle-can-fund-your-passion",
+    title: "How a Side Hustle Can Fund Your Passion",
+    episodeNumber: "Episode 30",
+    guest: {
+      name: "Jamme Alexander",
+      role: "Founder",
+      company: "Engineering Women",
+      website: "https://www.engineeringwomen.co",
+      industry: "Workforce Development & Drone Technology",
+      bio: "Jamme Alexander is the founder of Engineering Women, a workforce development and consulting firm headquartered in Mesa, Arizona, building drone, AI, and technical training programs — including an FAA Drone Pilot Academy and NextGen, a youth track led by her 16-year-old daughter. Originally from Council Bluffs, Iowa, Jamme is a serial entrepreneur whose path ran through management at the Mall of America, the art scene, a candle company, and private events before she taught herself commercial drone software development and cross-trained into machine learning, embedded systems, and AR/VR. She still runs Zen Events, the Arizona events and bartending company she built from a single Thumbtack profile — and which has funded Engineering Women for all eight years of its life.",
+      linkedin: "https://www.linkedin.com/in/jammealexander/"
+    },
+    description: "Engineering Women founder Jamme Alexander on the events business that quietly bankrolls her tech company, why she almost skipped Arizona Tech Week, and what building a product looks like when the product isn't software.",
+    longDescription: "In this episode, Santi and Meagan sit down with Jamme Alexander, founder of Engineering Women, a Mesa, Arizona workforce development firm building drone, AI, and technical training programs for women and youth. Jamme is a serial entrepreneur in the most literal sense — art, candles, private chef events, mobile bartending, drone piloting — and the throughline turns out to be the thing most aspiring PMs are told they can only learn inside a tech company.\n\nThe center of the conversation is a model more people should hear about: one business that pays the bills so the other one can take risks. Jamme is direct about it — Zen Events, the events company she scaled from a single Thumbtack listing to a full vendor network, has funded Engineering Women the entire time. She walks through how she spotted each opening, why she cut out the middleman thirty days into her first gig, and how a room of a thousand wedding guests turned into a customer pipeline for a drone company.\n\nFrom there it gets personal. Jamme talks about walking into Arizona Tech Week the year after she skipped it because she didn't think she belonged, and what she learned when the room went quiet instead of curious. She shares what she's building for her three kids — including an FAA course with nervous system regulation baked into the curriculum, and a youth publication her daughter now runs — and gives the most practical answer we've had on the show to the question every working parent asks.",
+    youtubeId: "gUXZmoanA_s",
+    buzzsproutId: "19532434",
+    topic: "career",
+    topics: ["Entrepreneurship", "Side Hustles", "Product Mindset Outside Tech", "Women in Tech", "Building for the Next Generation", "Working Parenthood"],
+    duration: "40 min",
+    publishedAt: "2026-08-11",
+    takeaways: [
+      "The two-business model Jamme runs on purpose: one that pays the bills, one that gets to take risks — and why she says neither would be standing without the other.",
+      "Thirty days into her first bartending gig she realized she didn't need the middleman. The exact moment she saw it, and the platform she used to go direct.",
+      "You can build product sense without ever touching a tech product. Jamme's events, candles, and drone services are a case study in finding the pain point and shipping against it.",
+      "The year Jamme skipped Arizona Tech Week because she didn't think she belonged — and what the room's reaction the following year actually told her about her own idea.",
+      "Her number one networking tip for anyone starting out, plus the thing she keeps noticing about how the next generation shows up online.",
+      "The intentional-learning shift Jamme made after years of grabbing every new skill that looked fun, and why she's deliberately slowing down now.",
+      "The most concrete answer we've gotten on working parenthood: what she actually said to her kids to take two days back for herself."
+    ],
+    resourcesMentioned: [
+      { title: "Engineering Women", url: "https://www.engineeringwomen.co" },
+      { title: "Jamme Alexander on LinkedIn", url: "https://www.linkedin.com/in/jammealexander/" }
+    ],
+    keywords: ["Jamme Alexander", "Engineering Women", "side hustle funding a startup", "serial entrepreneur", "women in tech Arizona", "Mesa Arizona tech", "Arizona Tech Week", "FAA Part 107 drone pilot", "drone pilot certification", "commercial drone software", "workforce development", "youth workforce development", "women in STEM", "product mindset without a tech product", "product management outside tech", "entrepreneurship for moms", "working parent balance", "networking tips", "intentional learning", "Zen Events", "NextGen youth program", "AI workforce training", "self-taught technologist"]
   }
 ];
 
