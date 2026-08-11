@@ -1304,6 +1304,8 @@ export const episodes: Episode[] = [
     ],
     resourcesMentioned: [
       { title: "Engineering Women", url: "https://www.engineeringwomen.co" },
+      { title: "FAA Drone Pilot Academy (Engineering Women)", url: "https://www.engineeringwomen.co/academy" },
+      { title: "Zen Events", url: "https://zeneventservices.com/" },
       { title: "Jamme Alexander on LinkedIn", url: "https://www.linkedin.com/in/jammealexander/" }
     ],
     keywords: ["Jamme Alexander", "Engineering Women", "side hustle funding a startup", "serial entrepreneur", "women in tech Arizona", "Mesa Arizona tech", "Arizona Tech Week", "FAA Part 107 drone pilot", "drone pilot certification", "commercial drone software", "workforce development", "youth workforce development", "women in STEM", "product mindset without a tech product", "product management outside tech", "entrepreneurship for moms", "working parent balance", "networking tips", "intentional learning", "Zen Events", "NextGen youth program", "AI workforce training", "self-taught technologist"]
