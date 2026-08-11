@@ -42,6 +42,8 @@ import andresPhoto from "@/assets/Andres photo.jpeg";
 import andresThumbnail from "@/assets/Andres Thumbnail.png";
 import davidPhoto from "@/assets/david photo.jpeg";
 import davidThumbnail from "@/assets/David Thumbnail.png";
+import jammePhoto from "@/assets/Jamme Picture.jpeg";
+import jammeThumbnail from "@/assets/Thumbnail Jamme.png";
 
 export interface Episode {
   id: string;
@@ -1264,6 +1266,50 @@ export const episodes: Episode[] = [
       { title: "Daria Love on LinkedIn (co-author, The Product Market Gap)", url: "https://www.linkedin.com/in/darialove/" }
     ],
     keywords: ["John Fontenot", "Path2Product", "Path to Product", "breaking into product management", "PM experience gap", "aspiring product manager", "product management certifications", "Product School worth it", "how to become a product manager without experience", "PM portfolio", "product management title", "LinkedIn title change", "career pivot to product", "UX research to product management", "PE backed vs VC backed", "product market gap", "Daria Love", "PM and PMM partnership", "Crossing the Chasm", "Geoffrey Moore", "continuous learning knowledge worker", "calendar blocking", "building a side project", "product first principles"]
+  },
+  {
+    id: "39",
+    slug: "how-a-side-hustle-can-fund-your-passion",
+    title: "How a Side Hustle Can Fund Your Passion",
+    episodeNumber: "Episode 30",
+    guest: {
+      name: "Jamme Alexander",
+      role: "Founder",
+      company: "Engineering Women",
+      website: "https://www.engineeringwomen.co",
+      industry: "Workforce Development & Drone Technology",
+      bio: "Jamme Alexander is the founder of Engineering Women, a workforce development and consulting firm headquartered in Mesa, Arizona, building drone, AI, and technical training programs — including an FAA Drone Pilot Academy and NextGen, a youth track led by her 16-year-old daughter. Originally from Council Bluffs, Iowa, Jamme is a serial entrepreneur whose path ran through management at the Mall of America, the art scene, a candle company, and private events before she taught herself commercial drone software development and cross-trained into machine learning, embedded systems, and AR/VR. She still runs Zen Events, the Arizona events and bartending company she built from a single Thumbtack profile — and which has funded Engineering Women for all eight years of its life.",
+      photo: jammePhoto,
+      linkedin: "https://www.linkedin.com/in/jammealexander/"
+    },
+    description: "Jamme Alexander got licensed to bartend for eighteen dollars because a stranger on Facebook needed help. Thirty days later she cut out the middleman — and that side hustle became the business that funds her real work: teaching teens to fly certified drones and build with AI.",
+    longDescription: "Jamme Alexander got her bartending license for eighteen dollars because a stranger on Facebook was looking for help. Thirty days and a handful of private parties later, she realized she didn't need the middleman, put up a Thumbtack profile, and started booking directly. That became Zen Events. And Zen Events became the thing that pays for Engineering Women — the Mesa, Arizona workforce development company where Jamme teaches youth to fly certified drones and build with AI.\n\nThat's the spine of this episode, and Jamme is blunt about it: one business funds the other, and has for all eight years. Santi and Meagan walk her back through how each piece got built — the candle company whose first vendor event cleared $850 in three hours and taught her to keep her own hands on the product, the word-of-mouth engine that turned one wedding into five, the vendor network she assembled by noticing what every bride kept asking for. None of it is a tech product. All of it runs on product instincts: find the pain point, ship against it, talk to the people paying you.\n\nThe back half is what the money is for. Jamme lays out the FAA pilot course she's building from scratch — nervous system regulation and conflict management sit in the curriculum next to airspace rules — and the youth unemployment number that keeps her building it. Her 16-year-old daughter got certified at 14, has shipped two AI apps, and now leads a youth publication under the program. Plus: the year Jamme skipped Arizona Tech Week because she didn't think she belonged, what happened the year she finally walked in, and the most practical answer we've had on this show to the question every working parent asks.",
+    youtubeId: "gUXZmoanA_s",
+    buzzsproutId: "19532434",
+    spotifyUrl: "https://open.spotify.com/episode/37kQCLtgugtDxiX7wS9F1j",
+    appleUrl: "https://podcasts.apple.com/us/podcast/how-a-side-hustle-can-fund-your-passion-with/id1784108281?i=1000782766533",
+    thumbnail: jammeThumbnail,
+    topic: "career",
+    topics: ["Entrepreneurship", "Side Hustles", "Product Mindset Outside Tech", "Women in Tech", "Building for the Next Generation", "Working Parenthood"],
+    duration: "40 min",
+    publishedAt: "2026-08-11",
+    takeaways: [
+      "An eighteen-dollar license and a stranger on Facebook started the whole thing. Thirty days in, Jamme saw she didn't need the middleman and went direct.",
+      "Two businesses, on purpose: Zen Events pays the bills so Engineering Women can take risks. Jamme says neither would be standing without the other, and it's been that way for eight years.",
+      "The candle company's first vendor event cleared $850 in three hours. That night taught her to keep her hands on the product and get in front of the people buying it.",
+      "You don't need a tech product to build product instincts. Events, candles, and drone services all came from the same move: find the pain point, ship against it, then ask the customer what's still missing.",
+      "The FAA pilot course Jamme is writing from scratch puts nervous system regulation and conflict management next to airspace rules — because a nervous pilot flies like one.",
+      "The youth unemployment number that keeps her building, and what she's putting in front of her own kids because of it: a daughter certified at 14, two AI apps shipped, now running a youth publication.",
+      "She skipped Arizona Tech Week one year because she didn't think she belonged. The year she finally walked in, the room went quiet — and that reaction told her more about her idea than any pitch meeting.",
+      "Her number one networking tip, and the two days she took back for herself with a single sentence to her kids."
+    ],
+    resourcesMentioned: [
+      { title: "Engineering Women", url: "https://www.engineeringwomen.co" },
+      { title: "FAA Drone Pilot Academy (Engineering Women)", url: "https://www.engineeringwomen.co/academy" },
+      { title: "Zen Events", url: "https://zeneventservices.com/" },
+      { title: "Jamme Alexander on LinkedIn", url: "https://www.linkedin.com/in/jammealexander/" }
+    ],
+    keywords: ["Jamme Alexander", "Engineering Women", "side hustle funding a startup", "serial entrepreneur", "women in tech Arizona", "Mesa Arizona tech", "Arizona Tech Week", "FAA Part 107 drone pilot", "drone pilot certification", "commercial drone software", "workforce development", "youth workforce development", "women in STEM", "product mindset without a tech product", "product management outside tech", "entrepreneurship for moms", "working parent balance", "networking tips", "intentional learning", "Zen Events", "NextGen youth program", "AI workforce training", "self-taught technologist"]
   }
 ];
 
