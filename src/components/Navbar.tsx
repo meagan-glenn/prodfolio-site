@@ -82,10 +82,10 @@ const Navbar = () => {
     >
       {showShutdownBanner && (
         <div className="pointer-events-auto bg-coral-dark text-navy-dark px-4 py-2 text-center text-sm font-semibold shadow-md" role="status">
-          Prodfolio is shutting down on September 1, 2026. Export your portfolio before then — questions?{" "}
-          <a href="mailto:hello@prodfolio.io" className="underline underline-offset-2 hover:text-navy transition-colors">
-            hello@prodfolio.io
-          </a>
+          Prodfolio is shutting down on September 1, 2026.{" "}
+          <Link to="/transition" className="underline underline-offset-2 hover:text-navy transition-colors">
+            Move your portfolio in 5 steps →
+          </Link>
         </div>
       )}
       <div className="mx-4 md:mx-6 mt-3 md:mt-4 pointer-events-auto">
@@ -217,7 +217,7 @@ const Navbar = () => {
                     asChild
                     className="bg-white text-primary hover:bg-white/90 transition-all px-5 py-2.5 h-auto shadow-md shadow-white/10"
                   >
-                    <a href="https://app.prodfolio.io/sign-up" target="_blank" rel="noopener noreferrer">Build your Prodfolio free</a>
+                    <Link to="/transition">Migration guide</Link>
                   </Button>
                 </div>
               </div>
@@ -316,7 +316,7 @@ const Navbar = () => {
                   <a href="https://app.prodfolio.io/login" target="_blank" rel="noopener noreferrer">Log In</a>
                 </Button>
                 <Button asChild className="w-full bg-white text-primary hover:bg-white/90 py-2.5 h-auto shadow-md shadow-white/10">
-                  <a href="https://app.prodfolio.io/sign-up" target="_blank" rel="noopener noreferrer">Build your Prodfolio free</a>
+                  <Link to="/transition">Migration guide</Link>
                 </Button>
               </div>
             </div>

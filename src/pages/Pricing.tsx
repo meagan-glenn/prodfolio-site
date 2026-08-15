@@ -8,6 +8,7 @@ import StickyCTA from "@/components/StickyCTA";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useSEO } from "@/hooks/useSEO";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Pricing = () => {
   const scrollRef = useScrollAnimation();
@@ -82,6 +83,12 @@ const Pricing = () => {
           <p className="text-xl text-white/80 mb-4">
             For less than the cost of a coffee per week, stand out in every application.
           </p>
+          <div className="glass-card inline-block px-6 py-4 mt-2 border border-coral-dark/40 text-left max-w-2xl">
+            <p className="text-white/90">
+              <strong className="text-white">Prodfolio is closed to new subscriptions.</strong> The platform shuts down on September 1, 2026. Existing members can{" "}
+              <Link to="/transition" className="text-primary underline underline-offset-2 hover:text-white transition-colors">move their portfolio in five steps</Link>.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -164,13 +171,11 @@ const Pricing = () => {
 
               <CardFooter className="pt-0 pb-6 mt-auto flex-col">
                 <Button
-                  asChild
-                  className="w-full h-12 font-semibold transition-all duration-200 focus:outline-none focus:ring-0 bg-navy text-white hover:bg-navy/90 hover:-translate-y-1 shadow-md"
+                  disabled
+                  className="w-full h-12 font-semibold bg-navy/40 text-white/70 cursor-not-allowed"
                   style={{ borderRadius: '12px' }}
                 >
-                  <a href="https://app.prodfolio.io/sign-up" target="_blank" rel="noopener noreferrer">
-                    Get Started Free
-                  </a>
+                  New sign-ups closed
                 </Button>
               </CardFooter>
             </Card>
@@ -230,11 +235,11 @@ const Pricing = () => {
 
               <CardFooter className="pt-0 pb-6 mt-auto flex-col">
                 <Button
-                  className="w-full h-12 font-semibold transition-all duration-200 focus:outline-none focus:ring-0 bg-navy text-white hover:bg-navy/90 hover:-translate-y-1"
+                  disabled
+                  className="w-full h-12 font-semibold bg-navy/40 text-white/70 cursor-not-allowed"
                   style={{ borderRadius: '12px' }}
-                  onClick={() => window.open(billingCycle === "annual" ? 'https://buy.stripe.com/cNi5kF8Zq4JTeGzaovbfO09' : 'https://buy.stripe.com/00w28t4Jab8hbunbszbfO08', '_blank')}
                 >
-                  Become a Founding Member
+                  New sign-ups closed
                 </Button>
               </CardFooter>
             </Card>

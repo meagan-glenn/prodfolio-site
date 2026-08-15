@@ -28,6 +28,7 @@ const Features = lazy(() => import("./pages/Features"));
 const EpisodePage = lazy(() => import("./pages/EpisodePage"));
 const Partners = lazy(() => import("./pages/Partners"));
 const AiInfo = lazy(() => import("./pages/AiInfo"));
+const Transition = lazy(() => import("./pages/Transition"));
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogPost = lazy(() => import("./pages/BlogPost"));
 const Changelog = lazy(() => import("./pages/Changelog"));
@@ -62,6 +63,7 @@ const App = () => {
               <Route path="/for-hiring-managers" element={<ForHiringManagers />} />
               <Route path="/features" element={<Features />} />
               <Route path="/ai-info" element={<AiInfo />} />
+              <Route path="/transition" element={<Transition />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/changelog" element={<Changelog />} />

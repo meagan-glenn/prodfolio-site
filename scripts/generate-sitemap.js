@@ -18,6 +18,7 @@ const TODAY = new Date().toISOString().split('T')[0];
 // Static pages with their priorities and change frequencies
 const staticPages = [
   { path: '/', priority: '1.0', changefreq: 'weekly' },
+  { path: '/transition', priority: '1.0', changefreq: 'weekly' },
   { path: '/features', priority: '0.9', changefreq: 'monthly' },
   { path: '/how-it-works', priority: '0.8', changefreq: 'monthly' },
   { path: '/examples', priority: '0.9', changefreq: 'weekly' },

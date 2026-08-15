@@ -115,13 +115,13 @@ const Landing = () => {
 
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-4" aria-label="Primary call to action">
               <Button asChild size="lg" className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 hover:scale-105 transition-all shadow-xl font-semibold">
-                <a href="https://app.prodfolio.io/sign-up">
-                  Start Your Portfolio Free
-                </a>
+                <Link to="/transition">
+                  Move Your Portfolio
+                </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="px-8 py-6 h-auto text-lg border-white/40 bg-white/10 text-white hover:bg-white/20 transition-all font-semibold">
-                <a href="https://cal.com/prodfolio/portfolio-setup" target="_blank" rel="noopener noreferrer">
-                  Join a Free Live Session
+                <a href="https://app.prodfolio.io/login" target="_blank" rel="noopener noreferrer">
+                  Log In to Export
                 </a>
               </Button>
             </div>
@@ -243,8 +243,8 @@ const Landing = () => {
                 Upload your resume. Our AI extracts information and experience, building the foundation for your portfolio.
               </p>
               <Button asChild size="lg" className="px-6 py-5 h-auto text-base bg-primary text-white hover:bg-primary/90 inline-flex items-center gap-2 rounded-xl font-semibold">
-                <a href="https://app.prodfolio.io/sign-up">
-                  Start importing <span aria-hidden="true">→</span>
+                <a href="https://app.prodfolio.io/login" target="_blank" rel="noopener noreferrer">
+                  Log in <span aria-hidden="true">→</span>
                 </a>
               </Button>
             </div>
@@ -363,8 +363,8 @@ const Landing = () => {
                 Get your personalized portfolio link. Share it with hiring managers, add it to LinkedIn, and own your narrative with a professional presence.
               </p>
               <Button asChild size="lg" className="px-6 py-5 h-auto text-base bg-primary text-white hover:bg-primary/90 inline-flex items-center gap-2 rounded-xl font-semibold">
-                <a href="https://app.prodfolio.io/sign-up">
-                  Create your link <span aria-hidden="true">→</span>
+                <a href="https://app.prodfolio.io/login" target="_blank" rel="noopener noreferrer">
+                  Log in <span aria-hidden="true">→</span>
                 </a>
               </Button>
             </div>
@@ -449,9 +449,9 @@ const Landing = () => {
             Your next PM role starts with your portfolio.
           </h2>
           <Button asChild className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl">
-            <a href="https://app.prodfolio.io/sign-up" target="_blank" rel="noopener noreferrer">
-              Start Your Portfolio Free
-            </a>
+            <Link to="/transition">
+              Move Your Portfolio
+            </Link>
           </Button>
           <p className="mt-4">
             <Link to="/quiz" className="text-sm text-white/60 hover:text-white/90 transition-colors underline underline-offset-2">
