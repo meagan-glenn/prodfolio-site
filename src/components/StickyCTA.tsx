@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 import { X } from "lucide-react";
@@ -28,13 +29,13 @@ const StickyCTA = () => {
           <X className="w-4 h-4" />
         </button>
         <Button asChild className="flex-1 bg-white text-navy hover:bg-white/90 font-semibold py-3 h-auto rounded-xl shadow-lg text-sm">
-          <a href="https://app.prodfolio.io/sign-up">
-            Start Free
-          </a>
+          <Link to="/transition">
+            Migration guide
+          </Link>
         </Button>
         <Button asChild className="flex-1 border-white/30 bg-white/10 text-white hover:bg-white/20 py-3 h-auto rounded-xl text-sm" variant="outline">
-          <a href="https://cal.com/prodfolio/portfolio-setup" target="_blank" rel="noopener noreferrer">
-            Live Session
+          <a href="https://app.prodfolio.io/login" target="_blank" rel="noopener noreferrer">
+            Log In
           </a>
         </Button>
       </div>

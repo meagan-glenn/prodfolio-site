@@ -44,9 +44,9 @@ const Footer = () => {
             <h4 className="font-semibold mb-4 text-white">Product</h4>
             <ul className="space-y-2 text-sm text-white/80">
               <li>
-                <a href="https://app.prodfolio.io/sign-up" className="hover:text-white hover:underline transition-all">
-                  Get Started
-                </a>
+                <Link to="/transition" className="hover:text-white hover:underline transition-all">
+                  Migration Guide
+                </Link>
               </li>
               <li>
                 <Link to="/pricing" className="hover:text-white hover:underline transition-all">
