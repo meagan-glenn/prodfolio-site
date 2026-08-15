@@ -110,7 +110,7 @@ const Landing = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-white/60 mb-8 max-w-xl mx-auto leading-relaxed">
-              Go from resume to published portfolio in under an hour.
+              Prodfolio is shutting down on September 1, 2026. Take your portfolio with you — we built a template and a 5-step walkthrough to make the move painless.
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-4" aria-label="Primary call to action">
@@ -126,7 +126,7 @@ const Landing = () => {
               </Button>
             </div>
             <p className="text-sm text-white/60 italic mt-4">
-              PMs using Prodfolio have landed roles at JP Morgan, Meta, and more
+              Existing members: export your data before September 1. Questions? hello@prodfolio.io
             </p>
 
           </header>
