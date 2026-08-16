@@ -1306,6 +1306,45 @@ export const episodes: Episode[] = [
       { title: "Zen Events", url: "https://zeneventservices.com/" }
     ],
     keywords: ["Jamme Alexander", "Engineering Women", "side hustle funding a startup", "serial entrepreneur", "women in tech Arizona", "Mesa Arizona tech", "Arizona Tech Week", "FAA Part 107 drone pilot", "drone pilot certification", "commercial drone software", "workforce development", "youth workforce development", "women in STEM", "product mindset without a tech product", "product management outside tech", "entrepreneurship for moms", "working parent balance", "networking tips", "intentional learning", "Zen Events", "NextGen youth program", "AI workforce training", "self-taught technologist"]
+  },
+  {
+    id: "40",
+    slug: "inside-the-yc-team-shipping-5-features-a-week",
+    title: "Inside the YC Team Shipping 5 Features a Week",
+    episodeNumber: "Episode 31",
+    guest: {
+      name: "Brendan Doyle",
+      role: "Head of Product",
+      company: "Campfire",
+      website: "https://campfire.ai",
+      industry: "AI-Native ERP & Accounting Software",
+      bio: "Brendan Doyle is Head of Product at Campfire, the AI-native ERP (YC S23), where three engineering pods ship four to five features a week. He grew up in Western Australia, studied accounting, and spent six years at KPMG — audit on large mining companies, then technical accounting, with stints in New York and San Francisco before landing back in the Sydney office. He left to join an accounting software company as its subject matter expert, got his first real exposure to engineers and designers, then founded and bootstrapped a lease accounting company with a single engineer, took it to hundreds of customers across the US, Saudi Arabia, and South Africa, and exited in 2025. After two months off he found Campfire by scrolling the Y Combinator company directory and applying cold.",
+      linkedin: "https://www.linkedin.com/in/brendan-d-837b4a6a/"
+    },
+    description: "Brendan Doyle would rather hire a great accountant with zero product experience than a great PM with no domain experience. He's not joking, and he defends it — along with a six-month roadmap ceiling and a team shipping four to five features a week.",
+    longDescription: "Brendan Doyle's entire career is one thread: accounting. Six years at KPMG — audit on mining companies, then technical accounting in Sydney — then a stint as the subject matter expert at an accounting software company, then a bootstrapped lease accounting startup he ran with exactly one engineer until he sold it in 2025. He took two months off, went scrolling through the Y Combinator company directory, found Campfire, and applied. He's been Head of Product there since December.\n\nCampfire is the AI-native ERP, and the pace is the headline: roughly 130 people, 30-plus engineers split across core accounting, revenue and integrations, and AI, shipping four to five features a week. Brendan walks Santi and Meagan through what actually makes that possible — why the codebase segregation means two engineers might never need to speak, why the acceleration is mostly engineers doing in a day what used to take two weeks, and why he sometimes skips customer conversations entirely and just builds. He's also honest about what breaks at that speed: support, marketing, and go-to-market finding out a feature already shipped after a customer asks for it, which he names as one of his own focuses going forward.\n\nThe rest is a founder-turned-PM being unusually direct. His roadmap goes six months out and no further, on purpose. He'll tell you what an LLM still can't do in technical accounting, having watched KPMG partners with thirty years of experience work. He explains what he actually gave up going from co-founder to PM — and what he was relieved to hand off. And he closes with the hiring position that gives the episode its edge: for a product role at Campfire, he would take someone with zero product background and a deep accounting one over the reverse, because he thinks the intricacies of accounting are harder to learn than how to build software.",
+    youtubeId: "W8307dsIR3w",
+    buzzsproutId: "19532735",
+    topic: "hiring",
+    topics: ["Domain Expertise", "Shipping Velocity", "Founder to PM", "Roadmapping", "AI in Product", "Breaking Into Product"],
+    duration: "53 min",
+    publishedAt: "2026-08-18",
+    takeaways: [
+      "The hire Brendan says he'd make that most product leaders wouldn't — zero product experience on one side, deep domain expertise on the other, and the reasoning he's willing to defend on the record.",
+      "What actually sits behind four to five features a week at a YC company: the structural thing about the codebase that means two engineers may never need to talk to each other.",
+      "Brendan sometimes builds without talking to customers first. He explains the exact conditions that make that the right call — and why it would be reckless anywhere else.",
+      "The organizational cost of shipping that fast, which shows up first in support and go-to-market. Brendan names it plainly instead of pretending velocity is free.",
+      "Why his roadmap stops at six months on purpose, and what he keeps deliberately vague past that line.",
+      "He watched KPMG partners with thirty years of experience work on technical accounting. He's clear about where an LLM lands next to that — and where it quietly goes wrong.",
+      "What Brendan gave up going from bootstrapped co-founder to PM at a 130-person company, and the part of the founder job he was genuinely happy to hand back.",
+      "If you have domain expertise and no product title, the two routes Brendan says are open to you — one formal and slow, one that skips the gatekeepers entirely."
+    ],
+    resourcesMentioned: [
+      { title: "Campfire", url: "https://campfire.ai" },
+      { title: "Campfire on LinkedIn", url: "https://www.linkedin.com/company/meetcampfire" },
+      { title: "Y Combinator company directory", url: "https://www.ycombinator.com/companies" }
+    ],
+    keywords: ["Brendan Doyle", "Campfire", "Campfire ERP", "AI native ERP", "Y Combinator", "YC S23", "shipping velocity", "shipping features fast", "product velocity", "domain expertise product management", "accounting background PM", "subject matter expert to product manager", "breaking into product management", "fintech product management", "accounting software product", "founder to product manager", "bootstrapped startup exit", "lease accounting software", "six month roadmap", "near term roadmap", "product roadmap AI era", "deprecation product decisions", "KPMG", "chartered accountant", "CPA CFA product", "LLM accounting limitations", "AI coding assistants engineering velocity", "product marketing alignment", "in person product team", "associate product manager roles"]
   }
 ];
 
