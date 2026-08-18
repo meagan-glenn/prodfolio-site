@@ -1329,6 +1329,7 @@ export const episodes: Episode[] = [
     youtubeId: "W8307dsIR3w",
     buzzsproutId: "19532735",
     spotifyUrl: "https://open.spotify.com/episode/7G4R5W8YHlE6xbJeh1lctP",
+    appleUrl: "https://podcasts.apple.com/us/podcast/inside-the-yc-team-shipping-5-features-a-week/id1784108281?i=1000784123866",
     thumbnail: brendanThumbnail,
     topic: "hiring",
     topics: ["Domain Expertise", "Shipping Velocity", "Founder to PM", "Roadmapping", "AI in Product", "Breaking Into Product"],
