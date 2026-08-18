@@ -1344,8 +1344,6 @@ export const episodes: Episode[] = [
       "Going from bootstrapped co-founder to PM at a 130-person company, the change Brendan talks about most isn't what he gave up. It's what he was relieved to stop carrying."
     ],
     resourcesMentioned: [
-      { title: "Campfire", url: "https://campfire.ai" },
-      { title: "Campfire on LinkedIn", url: "https://www.linkedin.com/company/meetcampfire" },
       { title: "Y Combinator company directory", url: "https://www.ycombinator.com/companies" }
     ],
     keywords: ["Brendan Doyle", "Campfire", "Campfire ERP", "AI native ERP", "Y Combinator", "YC S23", "shipping velocity", "shipping features fast", "product velocity", "domain expertise product management", "accounting background PM", "subject matter expert to product manager", "breaking into product management", "fintech product management", "accounting software product", "founder to product manager", "bootstrapped startup exit", "lease accounting software", "six month roadmap", "near term roadmap", "product roadmap AI era", "deprecation product decisions", "KPMG", "chartered accountant", "CPA CFA product", "LLM accounting limitations", "AI coding assistants engineering velocity", "product marketing alignment", "in person product team", "associate product manager roles"]
