@@ -1316,11 +1316,11 @@ export const episodes: Episode[] = [
     episodeNumber: "Episode 31",
     guest: {
       name: "Brendan Doyle",
-      role: "Head of Product",
+      role: "Product Lead",
       company: "Campfire",
       website: "https://campfire.ai",
       industry: "AI-Native ERP & Accounting Software",
-      bio: "Brendan Doyle is Head of Product at Campfire, the AI-native ERP (YC S23), where his team ships four to five features a week. He grew up in Western Australia, studied accounting, and started his career at KPMG: audit on large mining companies, then technical accounting, with stints in New York and San Francisco before landing back in the Sydney office. He left to join an accounting software company as its subject matter expert, got his first real exposure to engineers and designers, then founded and bootstrapped a lease accounting company with a single engineer, took it to hundreds of customers across the US, Saudi Arabia, and South Africa, and exited in 2025. After two months off he found Campfire by scrolling the Y Combinator company directory and applying cold.",
+      bio: "Brendan Doyle is Product Lead at Campfire, the AI-native ERP (YC S23), where his team ships four to five features a week. He grew up in Western Australia, studied accounting, and started his career at KPMG: audit on large mining companies, then technical accounting, with stints in New York and San Francisco before landing back in the Sydney office. He left to join an accounting software company as its subject matter expert, got his first real exposure to engineers and designers, then founded and bootstrapped a lease accounting company with a single engineer, took it to hundreds of customers across the US, Saudi Arabia, and South Africa, and exited in 2025. After two months off he found Campfire by scrolling the Y Combinator company directory and applying cold.",
       photo: brendanPhoto,
       linkedin: "https://www.linkedin.com/in/brendan-d-837b4a6a/"
     },
