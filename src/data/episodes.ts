@@ -44,6 +44,8 @@ import davidPhoto from "@/assets/david photo.jpeg";
 import davidThumbnail from "@/assets/David Thumbnail.png";
 import jammePhoto from "@/assets/Jamme Picture.jpeg";
 import jammeThumbnail from "@/assets/Thumbnail Jamme.png";
+import brendanPhoto from "@/assets/Brendan DoyleHeadshot.jpg";
+import brendanThumbnail from "@/assets/Brendan Thumbnail.png";
 
 export interface Episode {
   id: string;
@@ -1319,6 +1321,7 @@ export const episodes: Episode[] = [
       website: "https://campfire.ai",
       industry: "AI-Native ERP & Accounting Software",
       bio: "Brendan Doyle is Head of Product at Campfire, the AI-native ERP (YC S23), where three engineering pods ship four to five features a week. He grew up in Western Australia, studied accounting, and spent six years at KPMG — audit on large mining companies, then technical accounting, with stints in New York and San Francisco before landing back in the Sydney office. He left to join an accounting software company as its subject matter expert, got his first real exposure to engineers and designers, then founded and bootstrapped a lease accounting company with a single engineer, took it to hundreds of customers across the US, Saudi Arabia, and South Africa, and exited in 2025. After two months off he found Campfire by scrolling the Y Combinator company directory and applying cold.",
+      photo: brendanPhoto,
       linkedin: "https://www.linkedin.com/in/brendan-d-837b4a6a/"
     },
     description: "Brendan Doyle would rather hire a great accountant with zero product experience than a great PM with no domain experience. He's not joking, and he defends it — along with a six-month roadmap ceiling and a team shipping four to five features a week.",
@@ -1326,6 +1329,7 @@ export const episodes: Episode[] = [
     youtubeId: "W8307dsIR3w",
     buzzsproutId: "19532735",
     spotifyUrl: "https://open.spotify.com/episode/7G4R5W8YHlE6xbJeh1lctP",
+    thumbnail: brendanThumbnail,
     topic: "hiring",
     topics: ["Domain Expertise", "Shipping Velocity", "Founder to PM", "Roadmapping", "AI in Product", "Breaking Into Product"],
     duration: "53 min",
