@@ -53,6 +53,9 @@ export interface Episode {
   slug: string;
   title: string;
   episodeNumber?: string; // e.g., "S2E27"
+  season?: 1 | 2 | 3; // Explicit season. Needed from Episode 25 on, where
+                      // episodeNumber switched to absolute numbering and no
+                      // longer encodes the season.
   guest: {
     name: string;
     role: string;
@@ -1064,6 +1067,7 @@ export const episodes: Episode[] = [
     slug: "most-pms-arent-doing-product-management",
     title: "Most PMs Aren't Doing Product Management",
     episodeNumber: "Episode 25",
+    season: 3,
     guest: {
       name: "Steve Johnson",
       role: "Founder & Principal Consultant",
@@ -1107,6 +1111,7 @@ export const episodes: Episode[] = [
     slug: "how-product-managers-actually-get-hired",
     title: "How Product Managers Actually Get Hired",
     episodeNumber: "Episode 26",
+    season: 3,
     guest: {
       name: "Andres Tenias",
       role: "Senior Talent Acquisition Specialist",
@@ -1147,6 +1152,7 @@ export const episodes: Episode[] = [
     slug: "building-your-way-into-product",
     title: "Building Your Way Into Product",
     episodeNumber: "Episode 27",
+    season: 3,
     guest: {
       name: "David Nduka",
       role: "Founder & Product Manager",
@@ -1189,6 +1195,7 @@ export const episodes: Episode[] = [
     slug: "vibe-coding-wont-get-you-hired-as-a-pm",
     title: "Vibe Coding Won't Get You Hired as a PM",
     episodeNumber: "Episode 28",
+    season: 3,
     guest: {
       name: "Aaron Kesler",
       role: "Co-Founder & Head of Product",
@@ -1231,6 +1238,7 @@ export const episodes: Episode[] = [
     slug: "the-title-did-what-skills-couldnt",
     title: "The Title Did What Skills Couldn't",
     episodeNumber: "Episode 29",
+    season: 3,
     guest: {
       name: "John Fontenot",
       role: "Founder",
@@ -1275,6 +1283,7 @@ export const episodes: Episode[] = [
     slug: "how-a-side-hustle-can-fund-your-passion",
     title: "How a Side Hustle Can Fund Your Passion",
     episodeNumber: "Episode 30",
+    season: 3,
     guest: {
       name: "Jamme Alexander",
       role: "Founder",
@@ -1315,6 +1324,7 @@ export const episodes: Episode[] = [
     slug: "inside-the-yc-team-shipping-5-features-a-week",
     title: "Inside the YC Team Shipping 5 Features a Week",
     episodeNumber: "Episode 31",
+    season: 3,
     guest: {
       name: "Brendan Doyle",
       role: "Product Lead",
@@ -1354,6 +1364,7 @@ export const episodes: Episode[] = [
     slug: "two-years-in-a-deliberate-ending",
     title: "Two Years In: A Deliberate Ending",
     episodeNumber: "Episode 32",
+    season: 3,
     guest: {
       name: "Santi & Meagan",
       role: "Your Hosts",
