@@ -1350,8 +1350,8 @@ export const episodes: Episode[] = [
   },
   {
     id: "41",
-    slug: "signing-off-ending-two-projects-on-purpose",
-    title: "Signing Off: Ending Two Projects on Purpose",
+    slug: "two-years-in-a-deliberate-ending",
+    title: "Two Years In: A Deliberate Ending",
     episodeNumber: "Episode 32",
     guest: {
       name: "Santi & Meagan",
@@ -1383,7 +1383,7 @@ export const episodes: Episode[] = [
       { title: "Santiana Brace on LinkedIn", url: "https://www.linkedin.com/in/santiana-brace/" },
       { title: "Meagan Glenn on LinkedIn", url: "https://www.linkedin.com/in/meagan-glenn/" }
     ],
-    keywords: ["The Product Pivot finale", "final episode", "last episode", "product podcast finale", "Santiana Brace", "Meagan Glenn", "Prodfolio", "Prodfolio shutting down", "sunsetting a startup", "when to shut down a side project", "closing a startup on your own terms", "indie product lessons", "building in public", "podcast growth stats", "Buzzsprout analytics", "podcast download statistics", "how to grow a podcast", "podcast rebrand", "embedded podcast player SEO", "episode landing pages", "co-founder partnership", "mutual decision to shut down", "women in product", "moms in tech", "parental leave founder", "stepping back from a side project", "mentoring product managers", "two years of podcasting", "product management podcast", "career pivot to product"]
+    keywords: ["Two Years In A Deliberate Ending", "The Product Pivot finale", "final episode", "last episode", "deliberate ending", "product podcast finale", "Santiana Brace", "Meagan Glenn", "Prodfolio", "Prodfolio shutting down", "sunsetting a startup", "when to shut down a side project", "closing a startup on your own terms", "indie product lessons", "building in public", "podcast growth stats", "Buzzsprout analytics", "podcast download statistics", "how to grow a podcast", "podcast rebrand", "embedded podcast player SEO", "episode landing pages", "co-founder partnership", "mutual decision to shut down", "women in product", "moms in tech", "parental leave founder", "stepping back from a side project", "mentoring product managers", "two years of podcasting", "product management podcast", "career pivot to product"]
   }
 ];
 
