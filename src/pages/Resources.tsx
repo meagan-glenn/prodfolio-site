@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { episodes } from "@/data/episodes";
+import { episodes, type Episode } from "@/data/episodes";
 import meaganPhoto from "@/assets/meagan-photo.png";
 import santianaPhoto from "@/assets/santiana-photo.png";
 
@@ -45,8 +45,12 @@ const Resources = () => {
     ],
   });
 
-  // Filter episodes by season based on episodeNumber (S1E1, S2E1, etc.)
-  const getSeasonFromEpisode = (episodeNumber?: string) => {
+  // Season comes from the explicit `season` field when set, otherwise from the
+  // episodeNumber prefix (S1E1, S2E1, etc.). Episodes 25 onward switched to
+  // absolute numbering, so their prefix no longer encodes a season.
+  const getSeasonFromEpisode = (episode: Episode): SeasonFilter | null => {
+    if (episode.season) return `s${episode.season}` as SeasonFilter;
+    const { episodeNumber } = episode;
     if (!episodeNumber) return null;
     if (episodeNumber.startsWith("S1")) return "s1";
     if (episodeNumber.startsWith("S2")) return "s2";
@@ -62,7 +66,7 @@ const Resources = () => {
 
   const filteredEpisodes = activeFilter === "all"
     ? sortedEpisodes.filter(ep => ep.slug !== featuredEpisode?.slug)
-    : sortedEpisodes.filter(ep => getSeasonFromEpisode(ep.episodeNumber) === activeFilter);
+    : sortedEpisodes.filter(ep => getSeasonFromEpisode(ep) === activeFilter);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#1a1a2e] via-[#16213e] to-[#1a1a2e]">
