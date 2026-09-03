@@ -1368,6 +1368,7 @@ export const episodes: Episode[] = [
     youtubeId: "r_C-rw_IVhM",
     buzzsproutId: "19748943",
     spotifyUrl: "https://open.spotify.com/episode/6QjFKaxgexr4RGthtDo7XD",
+    appleUrl: "https://podcasts.apple.com/us/podcast/two-years-in-a-deliberate-ending/id1784108281?i=1000787684887",
     thumbnail: finaleThumbnail,
     topic: "career",
     topics: ["Series Finale", "Building in Public", "Podcast Growth", "Founder Lessons", "Knowing When to Stop", "Co-founder Partnership"],
