@@ -474,7 +474,7 @@ const EpisodePage = () => {
                   ) : (
                     <div className="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-primary to-coral flex items-center justify-center">
                       <span className="text-3xl font-bold text-white">
-                        {episode.guest.name.split(' ').map(n => n[0]).join('')}
+                        {episode.guest.name.split(' ').filter(n => /^[a-zA-Z]/.test(n)).map(n => n[0]).join('')}
                       </span>
                     </div>
                   )}

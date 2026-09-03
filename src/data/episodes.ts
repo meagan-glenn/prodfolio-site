@@ -46,6 +46,7 @@ import jammePhoto from "@/assets/Jamme Picture.jpeg";
 import jammeThumbnail from "@/assets/Thumbnail Jamme.png";
 import brendanPhoto from "@/assets/Brendan DoyleHeadshot.jpg";
 import brendanThumbnail from "@/assets/Brendan Thumbnail.png";
+import finaleThumbnail from "@/assets/episode 32.png";
 
 export interface Episode {
   id: string;
@@ -1347,6 +1348,46 @@ export const episodes: Episode[] = [
       { title: "Y Combinator company directory", url: "https://www.ycombinator.com/companies" }
     ],
     keywords: ["Brendan Doyle", "Campfire", "Campfire ERP", "AI native ERP", "Y Combinator", "YC S23", "shipping velocity", "shipping features fast", "product velocity", "domain expertise product management", "accounting background PM", "subject matter expert to product manager", "breaking into product management", "fintech product management", "accounting software product", "founder to product manager", "bootstrapped startup exit", "lease accounting software", "six month roadmap", "near term roadmap", "product roadmap AI era", "deprecation product decisions", "KPMG", "chartered accountant", "CPA CFA product", "LLM accounting limitations", "AI coding assistants engineering velocity", "product marketing alignment", "in person product team", "associate product manager roles"]
+  },
+  {
+    id: "41",
+    slug: "two-years-in-a-deliberate-ending",
+    title: "Two Years In: A Deliberate Ending",
+    episodeNumber: "Episode 32",
+    guest: {
+      name: "Santi & Meagan",
+      role: "Your Hosts",
+      company: "Prodfolio",
+      website: "https://prodfolio.io/",
+      industry: "Product Management, SaaS",
+      bio: "Santiana Brace and Meagan Glenn co-hosted The Product Pivot for two years and co-founded Prodfolio, the portfolio builder for product people. Santi pivoted from retail management through customer support and QA into product leadership, and led customer conversations, discovery, partnerships, and QA at Prodfolio. Meagan moved from customer success into founding PM roles and now works as a Fractional Product Lead; she built and shipped Prodfolio itself. They met in a LinkedIn DM in 2024, discovered they were both mentoring product managers on the side, and started a podcast to get that advice in front of more people. They have still never met in person.",
+      linkedin: "https://www.linkedin.com/in/santiana-brace/"
+    },
+    description: "Two years, 32 episodes, and two projects that both end here. Santi and Meagan pull the real Buzzsprout and Prodfolio numbers up live and make the case that a project you close on purpose is a finished one, not a failed one.",
+    longDescription: "The Product Pivot started as a LinkedIn DM between two people who were both quietly mentoring product managers on the side and figured the advice deserved a wider audience. Two years, 32 episodes, and more than fifteen senior product leaders later — they scheduled around full-time jobs, fractional work, a startup, and a pregnancy, and they kept making it work.\n\nThis finale is the behind-the-scenes episode where Santi pulls the Buzzsprout dashboard up live and Meagan walks through the changes that moved the needle — rebranding the show as a sub-brand of Prodfolio in early 2026.\n\nThen they do the same for Prodfolio, which is closing too. Seventy-plus beta signups against a goal of fifteen, cleared in the first two hours. A November 2025 launch, a thousand-plus portfolio views driven, over a thousand dollars in ARR, eleven public releases with a real changelog. And a straight answer about why they are stopping anyway: monetization was never the point, both of them are prioritizing different things in this season, and the call was mutual, because every project they started together they intended to end together.\n\nThe archive stays up. The DMs stay open.",
+    youtubeId: "r_C-rw_IVhM",
+    buzzsproutId: "19748943",
+    spotifyUrl: "https://open.spotify.com/episode/6QjFKaxgexr4RGthtDo7XD",
+    thumbnail: finaleThumbnail,
+    topic: "career",
+    topics: ["Series Finale", "Building in Public", "Podcast Growth", "Founder Lessons", "Knowing When to Stop", "Co-founder Partnership"],
+    duration: "49 min",
+    publishedAt: "2026-09-01",
+    takeaways: [
+      "The entire show came out of a single LinkedIn DM, and the two hosts have never once been in the same room. They are specific about the thing that actually made two years of scheduling survive full-time jobs, a startup, and a pregnancy.",
+      "Santi reads the Buzzsprout dashboard live and unprepared, including a geography breakdown neither host had looked at in months. One country's share of their downloads genuinely stopped them mid-sentence.",
+      "The change that moved listens the most had nothing to do with guests or topics. Meagan walks through the rebrand and the page structure behind it, and names the metric that went from effectively zero to a real channel.",
+      "Prodfolio's beta had a signup goal of fifteen. Santi says exactly how long it took to blow past it, and what that did to what they expected from launch.",
+      "They are closing both projects while the numbers are still climbing. The reasoning has nothing to do with the metrics, and they give it straight instead of dressing it up as a pivot.",
+      "Santi had one thing she wanted said out loud before the last episode ended, for women, mothers, and anyone whose season is changing. It is about how she treated herself when this chapter started to close, and she is honest that she got it wrong for a while."
+    ],
+    resourcesMentioned: [
+      { title: "The Product Pivot on YouTube (full archive)", url: "https://www.youtube.com/@TheProductPivot" },
+      { title: "Buzzsprout", url: "https://www.buzzsprout.com" },
+      { title: "Santiana Brace on LinkedIn", url: "https://www.linkedin.com/in/santiana-brace/" },
+      { title: "Meagan Glenn on LinkedIn", url: "https://www.linkedin.com/in/meagan-glenn/" }
+    ],
+    keywords: ["Two Years In A Deliberate Ending", "The Product Pivot finale", "final episode", "last episode", "deliberate ending", "product podcast finale", "Santiana Brace", "Meagan Glenn", "Prodfolio", "Prodfolio shutting down", "sunsetting a startup", "when to shut down a side project", "closing a startup on your own terms", "indie product lessons", "building in public", "podcast growth stats", "Buzzsprout analytics", "podcast download statistics", "how to grow a podcast", "podcast rebrand", "embedded podcast player SEO", "episode landing pages", "co-founder partnership", "mutual decision to shut down", "women in product", "moms in tech", "parental leave founder", "stepping back from a side project", "mentoring product managers", "two years of podcasting", "product management podcast", "career pivot to product"]
   }
 ];
 
