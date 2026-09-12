@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { ChevronDown } from "lucide-react";
 
 import prodfolioLogoProd from "@/assets/prodfolio-logo-prod.png";
 import prodfolioIcon from "@/assets/prodfolio-icon.png";
@@ -12,9 +11,6 @@ const Navbar = () => {
   const showShutdownBanner = !pathname.startsWith("/podcast");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isWhoItsForOpen, setIsWhoItsForOpen] = useState(false);
-  const whoItsForRef = useRef<HTMLDivElement>(null);
-  const menuItemsRef = useRef<(HTMLAnchorElement | null)[]>([]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,52 +20,6 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  // Close dropdown when clicking outside
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (whoItsForRef.current && !whoItsForRef.current.contains(event.target as Node)) {
-        setIsWhoItsForOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
-
-  const handleMenuKeyDown = useCallback((e: React.KeyboardEvent) => {
-    if (!isWhoItsForOpen) {
-      if (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        setIsWhoItsForOpen(true);
-        setTimeout(() => menuItemsRef.current[0]?.focus(), 0);
-      }
-      return;
-    }
-
-    const items = menuItemsRef.current.filter(Boolean);
-    const currentIndex = items.findIndex((item) => item === document.activeElement);
-
-    switch (e.key) {
-      case 'ArrowDown':
-        e.preventDefault();
-        items[(currentIndex + 1) % items.length]?.focus();
-        break;
-      case 'ArrowUp':
-        e.preventDefault();
-        items[(currentIndex - 1 + items.length) % items.length]?.focus();
-        break;
-      case 'Escape':
-        e.preventDefault();
-        setIsWhoItsForOpen(false);
-        // Return focus to the trigger button
-        (whoItsForRef.current?.querySelector('button') as HTMLButtonElement)?.focus();
-        break;
-      case 'Tab':
-        setIsWhoItsForOpen(false);
-        break;
-    }
-  }, [isWhoItsForOpen]);
 
   return (
     <>
@@ -82,7 +32,7 @@ const Navbar = () => {
     >
       {showShutdownBanner && (
         <div className="pointer-events-auto bg-coral-dark text-navy-dark px-4 py-2 text-center text-sm font-semibold shadow-md" role="status">
-          Prodfolio is shutting down on September 1, 2026.{" "}
+          Prodfolio shut down on September 1, 2026.{" "}
           <Link to="/transition" className="underline underline-offset-2 hover:text-navy transition-colors">
             Move your portfolio in 5 steps →
           </Link>
@@ -102,7 +52,7 @@ const Navbar = () => {
                 <Link to="/" className="flex items-center">
                   <img
                     src={prodfolioLogoProd}
-                    alt="Prodfolio - Show Your Work. Own Your Impact."
+                    alt="Prodfolio"
                     className="h-12 md:h-16 hidden md:block scale-125 origin-left drop-shadow-[0_0_20px_rgba(158,133,249,0.4)] transition-all hover:drop-shadow-[0_0_25px_rgba(158,133,249,0.6)]"
                   />
                   <img
@@ -120,99 +70,20 @@ const Navbar = () => {
                 >
                   Home
                 </Link>
-
-                {/* Who it's for Dropdown */}
-                <div
-                  className="relative"
-                  ref={whoItsForRef}
-                  onMouseEnter={() => setIsWhoItsForOpen(true)}
-                  onMouseLeave={() => setIsWhoItsForOpen(false)}
-                >
-                  <button
-                    onClick={() => setIsWhoItsForOpen(!isWhoItsForOpen)}
-                    onKeyDown={handleMenuKeyDown}
-                    className="font-medium text-white hover:text-white/80 transition-colors flex items-center gap-1 [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]"
-                    aria-expanded={isWhoItsForOpen}
-                    aria-haspopup="true"
-                  >
-                    Who it's for
-                    <ChevronDown className={`w-4 h-4 transition-transform ${isWhoItsForOpen ? 'rotate-180' : ''}`} aria-hidden="true" />
-                  </button>
-
-                  <div
-                    className={`absolute top-full left-0 pt-2 ${
-                      isWhoItsForOpen ? 'pointer-events-auto' : 'pointer-events-none'
-                    }`}
-                  >
-                  <div
-                    className={`w-48 bg-[#1a1040]/90 backdrop-blur-xl border border-white/15 rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)] py-2 transition-all duration-200 ${
-                      isWhoItsForOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'
-                    }`}
-                    role="menu"
-                    aria-label="Who it's for"
-                    onKeyDown={handleMenuKeyDown}
-                  >
-                    <Link
-                      to="/features"
-                      className="block px-4 py-2 text-white hover:bg-white/10 transition-colors focus:bg-white/10 focus:outline-none"
-                      onClick={() => setIsWhoItsForOpen(false)}
-                      role="menuitem"
-                      tabIndex={isWhoItsForOpen ? 0 : -1}
-                      ref={(el) => { menuItemsRef.current[0] = el; }}
-                    >
-                      Product Managers
-                    </Link>
-                    <Link
-                      to="/for-career-changers"
-                      className="block px-4 py-2 text-white hover:bg-white/10 transition-colors focus:bg-white/10 focus:outline-none"
-                      onClick={() => setIsWhoItsForOpen(false)}
-                      role="menuitem"
-                      tabIndex={isWhoItsForOpen ? 0 : -1}
-                      ref={(el) => { menuItemsRef.current[1] = el; }}
-                    >
-                      Career Changers
-                    </Link>
-                    <Link
-                      to="/for-hiring-managers"
-                      className="block px-4 py-2 text-white hover:bg-white/10 transition-colors focus:bg-white/10 focus:outline-none"
-                      onClick={() => setIsWhoItsForOpen(false)}
-                      role="menuitem"
-                      tabIndex={isWhoItsForOpen ? 0 : -1}
-                      ref={(el) => { menuItemsRef.current[2] = el; }}
-                    >
-                      Hiring Managers
-                    </Link>
-                  </div>
-                  </div>
-                </div>
-
                 <Link
-                  to="/examples"
+                  to="/podcast"
                   className="font-medium text-white hover:text-white/80 transition-colors [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]"
                 >
-                  Portfolio Examples
+                  Podcast
                 </Link>
                 <Link
-                  to="/pricing"
+                  to="/blog"
                   className="font-medium text-white hover:text-white/80 transition-colors [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]"
                 >
-                  Pricing
-                </Link>
-                <Link
-                  to="/quiz"
-                  className="font-medium text-coral-light hover:text-white transition-colors [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]"
-                >
-                  Quiz
+                  Blog
                 </Link>
 
-                <div className="flex items-center space-x-4 ml-8">
-                  <Button
-                    asChild
-                    variant="outline"
-                    className="border-white/40 bg-white/10 text-white hover:bg-white/20 transition-all"
-                  >
-                    <a href="https://app.prodfolio.io/login" target="_blank" rel="noopener noreferrer">Log In</a>
-                  </Button>
+                <div className="flex items-center ml-8">
                   <Button
                     asChild
                     className="bg-white text-primary hover:bg-white/90 transition-all px-5 py-2.5 h-auto shadow-md shadow-white/10"
@@ -224,12 +95,6 @@ const Navbar = () => {
 
               {/* Mobile menu button */}
               <div className="md:hidden flex items-center gap-3">
-                <Link
-                  to="/examples"
-                  className="text-sm font-semibold text-coral-light hover:text-white transition-colors"
-                >
-                  View Examples
-                </Link>
                 <button
                   onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                   className="text-white hover:text-white/80 transition-colors"
@@ -266,55 +131,19 @@ const Navbar = () => {
                   Home
                 </Link>
                 <Link
-                  to="/examples"
+                  to="/podcast"
                   className="block py-2 font-medium text-white hover:text-white/80 transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Portfolio Examples
+                  Podcast
                 </Link>
                 <Link
-                  to="/pricing"
+                  to="/blog"
                   className="block py-2 font-medium text-white hover:text-white/80 transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Pricing
+                  Blog
                 </Link>
-                <Link
-                  to="/quiz"
-                  className="block py-2 font-medium text-coral-light hover:text-white transition-colors"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  What Kind of PM Are You?
-                </Link>
-
-                {/* Who it's for Section */}
-                <div className="pt-2 border-t border-white/10">
-                  <p className="py-2 text-white/60 text-sm font-medium">Who it's for</p>
-                  <Link
-                    to="/features"
-                    className="block py-2 pl-4 font-medium text-white hover:text-white/80 transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Product Managers
-                  </Link>
-                  <Link
-                    to="/for-career-changers"
-                    className="block py-2 pl-4 font-medium text-white hover:text-white/80 transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Career Changers
-                  </Link>
-                  <Link
-                    to="/for-hiring-managers"
-                    className="block py-2 pl-4 font-medium text-white hover:text-white/80 transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Hiring Managers
-                  </Link>
-                </div>
-                <Button asChild variant="ghost" className="w-full text-white hover:bg-white/10">
-                  <a href="https://app.prodfolio.io/login" target="_blank" rel="noopener noreferrer">Log In</a>
-                </Button>
                 <Button asChild className="w-full bg-white text-primary hover:bg-white/90 py-2.5 h-auto shadow-md shadow-white/10">
                   <Link to="/transition">Migration guide</Link>
                 </Button>
