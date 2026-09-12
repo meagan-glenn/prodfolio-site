@@ -6,7 +6,6 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 
 const TEMPLATE_URL = "https://prodfoliocopy.lovable.app/";
-const EXPORT_URL = "https://app.prodfolio.io/settings";
 const VIDEO_EMBED_URL =
   "https://www.tella.tv/video/vid_cmsrqu4ib00000aj52797cido/embed?b=0&title=1&a=1&loop=0&autoPlay=false&t=0&muted=0&wt=0&o=0";
 
@@ -20,18 +19,10 @@ If a field in my export doesn't have an obvious slot in content.ts, mention it i
 
 const STEPS: { title: React.ReactNode; body: React.ReactNode }[] = [
   {
-    title: (
-      <>
-        Export your data from <strong className="text-white">Settings → Export</strong>
-      </>
-    ),
+    title: <>Find your export file</>,
     body: (
       <>
-        Log in to{" "}
-        <a href={EXPORT_URL} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2 hover:text-white transition-colors">
-          app.prodfolio.io
-        </a>
-        , open Settings, and click Export. You'll get a zip containing <code className="text-white/90 bg-white/10 px-1.5 py-0.5 rounded">export.json</code> plus your media.
+        The Prodfolio app is no longer online, so the export feature is no longer available. If you exported your data before September 1, look for the zip containing <code className="text-white/90 bg-white/10 px-1.5 py-0.5 rounded">export.json</code> plus your media. If you never exported, you can still use the template below and add your content manually.
       </>
     ),
   },
@@ -126,11 +117,11 @@ const Transition = () => {
               <ul className="space-y-2 text-white/80">
                 <li className="flex items-start gap-3">
                   <span className="text-coral-dark font-bold mt-0.5">→</span>
-                  <span>Prodfolio closed on <strong className="text-white">September 1, 2026</strong>. Accounts, portfolio links, and the export feature are no longer guaranteed to work.</span>
+                  <span>Prodfolio closed on <strong className="text-white">September 1, 2026</strong>. The app, accounts, and portfolio links are no longer available.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-coral-dark font-bold mt-0.5">→</span>
-                  <span>If you still have your <code className="text-white/90 bg-white/10 px-1.5 py-0.5 rounded">export.json</code> file, you can follow the steps below to rebuild your portfolio on the free Lovable template.</span>
+                  <span>If you exported your data before shutdown, you can follow the steps below to rebuild your portfolio on the free Lovable template. If you didn't export, you can still use the template and add your content manually.</span>
                 </li>
               </ul>
             </div>

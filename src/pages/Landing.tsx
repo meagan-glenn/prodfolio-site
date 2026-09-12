@@ -48,7 +48,7 @@ const Landing = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-white/60 mb-8 max-w-xl mx-auto leading-relaxed">
-              Prodfolio shut down on September 1, 2026. If you haven't exported your portfolio yet, follow the migration guide to take your work with you.
+              Prodfolio shut down on September 1, 2026. If you exported your data, follow the migration guide to rebuild your portfolio on a free template.
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-4" aria-label="Primary actions">
