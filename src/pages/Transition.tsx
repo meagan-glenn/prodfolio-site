@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 
 const TEMPLATE_URL = "https://prodfoliocopy.lovable.app/";
 const EXPORT_URL = "https://app.prodfolio.io/settings";
-const SUPPORT_EMAIL = "hello@prodfolio.io";
 const VIDEO_EMBED_URL =
   "https://www.tella.tv/video/vid_cmsrqu4ib00000aj52797cido/embed?b=0&title=1&a=1&loop=0&autoPlay=false&t=0&muted=0&wt=0&o=0";
 
@@ -76,7 +75,7 @@ const Transition = () => {
   useSEO({
     title: "Migrate Your Portfolio | Prodfolio",
     description:
-      "Prodfolio is shutting down on September 1, 2026. Follow this 5-step walkthrough to move your portfolio to a free Lovable template that mirrors your Prodfolio site.",
+      "Prodfolio shut down on September 1, 2026. Follow this 5-step walkthrough to move your portfolio to a free Lovable template that mirrors your Prodfolio site.",
     canonical: "https://prodfolio.io/transition",
     structuredData: {
       "@context": "https://schema.org",
@@ -111,7 +110,7 @@ const Transition = () => {
         <div className="prodfolio-container max-w-[860px] mx-auto">
           {/* Header */}
           <div className="mb-10">
-            <p className="text-sm font-medium text-white/60 uppercase tracking-widest mb-3">Prodfolio is shutting down September 1, 2026</p>
+            <p className="text-sm font-medium text-white/60 uppercase tracking-widest mb-3">Prodfolio shut down September 1, 2026</p>
             <h1 className="text-4xl md:text-6xl font-heading font-bold text-white mb-4">
               Move your portfolio in five steps
             </h1>
@@ -123,15 +122,15 @@ const Transition = () => {
           <div className="space-y-8">
             {/* Deadline */}
             <div className="glass-card p-6 border border-coral-dark/40">
-              <h2 className="text-lg font-heading font-bold text-white mb-2">What happens on September 1</h2>
+              <h2 className="text-lg font-heading font-bold text-white mb-2">Prodfolio has shut down</h2>
               <ul className="space-y-2 text-white/80">
                 <li className="flex items-start gap-3">
                   <span className="text-coral-dark font-bold mt-0.5">→</span>
-                  <span>Your account, published portfolio, and export stay available <strong className="text-white">until September 1, 2026</strong>. Export before then.</span>
+                  <span>Prodfolio closed on <strong className="text-white">September 1, 2026</strong>. Accounts, portfolio links, and the export feature are no longer guaranteed to work.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-coral-dark font-bold mt-0.5">→</span>
-                  <span>After September 1 we can't guarantee ongoing support, access, or that portfolio links will continue to resolve.</span>
+                  <span>If you still have your <code className="text-white/90 bg-white/10 px-1.5 py-0.5 rounded">export.json</code> file, you can follow the steps below to rebuild your portfolio on the free Lovable template.</span>
                 </li>
               </ul>
             </div>
@@ -203,19 +202,11 @@ const Transition = () => {
               </Button>
             </div>
 
-            {/* Help */}
+            {/* Note */}
             <div className="glass-card p-8">
-              <h2 className="text-2xl font-heading font-bold text-white mb-2">Need a hand?</h2>
+              <h2 className="text-2xl font-heading font-bold text-white mb-2">A note from the team</h2>
               <p className="text-white/75 leading-relaxed">
-                If you hit a snag or want a second pair of eyes before you publish, we're happy to help 1:1 through the end of August. Email{" "}
-                <a href={`mailto:${SUPPORT_EMAIL}`} className="text-primary underline underline-offset-2 hover:text-white transition-colors">
-                  {SUPPORT_EMAIL}
-                </a>{" "}
-                or DM Meagan on{" "}
-                <a href="https://www.linkedin.com/in/meagan-glenn/" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2 hover:text-white transition-colors">
-                  LinkedIn
-                </a>
-                .
+                Thank you for being part of Prodfolio. Prodfolio is no longer actively supported, but the migration steps and Lovable template above will continue to work. We hope they help you take your portfolio with you.
               </p>
             </div>
           </div>
